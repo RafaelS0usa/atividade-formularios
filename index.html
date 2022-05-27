@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+    <div>
+        <h1 id="titulo">Seja Bem-Vindo!</h1>
+        <p id="subtitulo">Cadastre-se já</p>
+        <br>
+    </div>
+    <form method="post">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input id="nome" type="text" name="nome" title="Digite seu nome"  required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input id="sobrenome" type="text" name="sobrenome" title="Digite seu sobrenome"  required>
+            </div>
+        </fieldset> 
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input id="email" type="email" name="email" title="Email"  required>
+        </div>
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+        <button class="botao" type="button" onsubmit="">Concluído</button>            
+    </form>
+<script src="index.js"></script>
+</body>
+</html>
